@@ -23,6 +23,8 @@ Dá sa povedať, že IS VS vystupuje pri svojich dátach v niekoľkých roliach:
 
 ![Referenčné vs referencované údaje](./../Architecture/Referecne_udaje/Referencne_udaje.png)
 
+[Zoznam referenčných registrov v MetaIS](https://metais.finance.gov.sk/refregisters/list?page=1&count=20)
+
 ## URI - Jednotný referencovateľný identifikátor
 Ak chceme odkazovať na nejaký objekt, napr. fyzickú osobu, právnickú osobu, vozidlo, ... , musíme vedieť povedať na čo odkazujeme, použiť výstižné označenie tohto objektu, ktoré ho dobre identifikuje. Toto označenie nazývame **jednotný referencovateľný identifikátor (URI - Uniform Resource Identifier)**. 
 Dobrým príkladom URI je https://data.gov.sk/id/legal-subject/ico/00151742 , čo je identifikátor MFSR podľa ičo. URI teda nie je len samotné ičo (aj keď aj to by malo postačovať na identifikovanie subjektu). Samotné ičo je iba číslo, nie je z neho jasné že čo hovorí, musíme vedieť, že odkazuje na právnickú osobu pomocou ičo. Keď prídáme "obálku" aby vzniklo URI, tak zo samotného URI je jasné, že je to identifikátor právnickej osoby.
@@ -35,4 +37,4 @@ Od URI prirodzene očakávame:
 
 Napr. identifikátor FO , čo porušuje tretie pravidlo, pretože obsahuje rodné číslo, takže sa vlastne nedá zverejňovať a porušuje aj štvrté pravidlo, lebo obsahuje priezvisko, ktorého zmena sa dá (u žien) očakávať.
 
-Používanie URI smeruje k Linked Data, ontológiám jednotlivých domén a sémantickému webu (web dát, nie web dokumentov) označovanému ako Web 3.0. 
+Používanie URI smeruje k Linked Data, ontológiám jednotlivých domén a sémantickému webu (web dát, nie web dokumentov) označovanému ako Web 3.0. Vďaka ontológii budeme vedieť, že https://data.gov.sk/id/legal-subject/ico/00151742/name odkazuje na meno subjektu, https://data.gov.sk/id/legal-subject/ico/00151742/sidlo odkazuje na sídlo subjektu a podobne. Keď vieme že sídlo sa skladá z ulice, čísla, mesta (zjednodušený model), tak sa môžeme ďalej odkazovať (to už sme v ontológii popisujúcej sídlo, nie právnickú osobu) napr. na https://data.gov.sk/id/legal-subject/ico/00151742/sidlo/ulica a podobne. Spravovanie URI sa robí cez [MetaIS](https://metais.finance.gov.sk/howto/URI.URI/URI_HOWTO)
