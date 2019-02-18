@@ -1,0 +1,2 @@
+# Kvalita dát
+
