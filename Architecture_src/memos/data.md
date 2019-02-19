@@ -10,7 +10,9 @@ V systéme sú evidovené aj iné údaje, napr. dátum evidencie vozidla, kto sc
 
 ![Register vs Agendový systém](./../Architecture/Referecne_udaje/Register_Agenda.png)
 
+
 ## Referenčný register
+
 Pri vozidle evidujeme aj informáciu o vlastníkovi vozidla, čo je fyzická alebo právnická osoba. Úlohou IS evidencie vozidiel nie je zaoberať sa evidenciou osôb, to je účelom Registra fyzických osôb alebo Registra právnických osôb. Preto IS evidencie vozidiel má odkazovať (referencovať) na osobu v RFO/RPO. Vlastník vozidla je teda **referencovaný údaj**. Register RFO/RPO hrá v tomto prípade rolu **referenčného registra** ktorý poskytuje svoje *referenčné údaje* o osobe. IS evidencie vozidiel je v roli konzumenta *referencovaných údajov*. 
 Týmto zabezpečíme, že pri zmene priezviska, názvu spoločnosti prípadne ďalších referenčných údajov, sa zmena realizuje iba v referenčnom registri. Ostatné registre si tieto zmeny, o údajoch ktoré referencujú, preberú z referenčného registra. Samotná výmena údajov neprebieha priamou integráciou, ale cez CSRU. Povinnosť využívať referenčné údaje a získavať ich prostredníctvom CSRU je definovaná zákonom o eGovernmente.
 
@@ -25,7 +27,9 @@ Dá sa povedať, že IS VS vystupuje pri svojich dátach v niekoľkých roliach:
 
 [Zoznam referenčných registrov v MetaIS](https://metais.finance.gov.sk/refregisters/list?page=1&count=20)
 
+
 ## URI - Jednotný referencovateľný identifikátor
+
 Ak chceme odkazovať na nejaký objekt, napr. fyzickú osobu, právnickú osobu, vozidlo, ... , musíme vedieť povedať na čo odkazujeme, použiť výstižné označenie tohto objektu, ktoré ho dobre identifikuje. Toto označenie nazývame **jednotný referencovateľný identifikátor (URI - Uniform Resource Identifier)**. 
 Dobrým príkladom URI je https://data.gov.sk/id/legal-subject/ico/00151742 , čo je identifikátor MFSR podľa ičo. URI teda nie je len samotné ičo (aj keď aj to by malo postačovať na identifikovanie subjektu). Samotné ičo je iba číslo, nie je z neho jasné že čo hovorí, musíme vedieť, že odkazuje na právnickú osobu pomocou ičo. Keď prídáme "obálku" aby vzniklo URI, tak zo samotného URI je jasné, že je to identifikátor právnickej osoby.
 

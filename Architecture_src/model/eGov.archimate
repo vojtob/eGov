@@ -216,51 +216,11 @@ Iba správca registratúry má právo toto meniť. Takže napr. pre podnikateľa
           <content>V agendovej časti IS spracovávame podania, robíme rozhodnutia, sú to procesy súvisiace so správou agendy</content>
         </child>
         <child xsi:type="archimate:Note" id="53df923f-453b-410c-a09e-a7a156dfd07f" targetConnections="f23039eb-3bbd-443b-9f81-e0115562d283" textAlignment="1" fillColor="#ffffff">
-          <bounds x="180" y="435" width="181" height="76"/>
+          <bounds x="180" y="435" width="181" height="91"/>
           <content>V registrovej časti evidujeme referenčné údaje, ktoré poskytujeme konzumentom údajov. Tieto údaje sú &quot;zdrojom pravdy&quot;.</content>
         </child>
       </element>
-      <element xsi:type="archimate:ArchimateDiagramModel" name="Referencne_udaje" id="8d4dade1-cabb-4472-833e-899ce713c73f">
-        <child xsi:type="archimate:DiagramObject" id="9b3a97e3-bc1f-4d68-a5ab-fa3b496eedb2" targetConnections="f199fa71-a3db-4345-844b-4c277b622409" alpha="100" archimateElement="a44b1b6b-a84d-40cc-899e-045c877e4047" type="1">
-          <bounds x="30" y="30" width="211" height="196"/>
-          <sourceConnection xsi:type="archimate:Connection" id="23ef6c2e-ee6c-46a1-b500-661d9215d8b6" source="9b3a97e3-bc1f-4d68-a5ab-fa3b496eedb2" target="053d6774-08b2-41c8-a9c2-6610ae462722" archimateRelationship="01cba1d7-ecca-4f99-9d76-e7bdedaac54e"/>
-          <child xsi:type="archimate:DiagramObject" id="053d6774-08b2-41c8-a9c2-6610ae462722" targetConnections="23ef6c2e-ee6c-46a1-b500-661d9215d8b6" archimateElement="ccee3c9c-678d-4a9b-a0a1-a1ec58de1a89" type="1">
-            <bounds x="30" y="60" width="151" height="106"/>
-            <sourceConnection xsi:type="archimate:Connection" id="565465e9-9fa6-47a1-ac9f-65f8f589a4b0" source="053d6774-08b2-41c8-a9c2-6610ae462722" target="00806e93-1b77-4602-9611-ade38e21583c" archimateRelationship="c7ce88d2-152f-4179-b2a5-a5b7458845e7"/>
-            <child xsi:type="archimate:DiagramObject" id="00806e93-1b77-4602-9611-ade38e21583c" targetConnections="565465e9-9fa6-47a1-ac9f-65f8f589a4b0" archimateElement="f958d240-2c9f-4ba6-bc85-98fd0108665b">
-              <bounds x="15" y="45" width="120" height="45"/>
-              <sourceConnection xsi:type="archimate:Connection" id="b863c238-ae61-4190-8dad-b6f546426c98" source="00806e93-1b77-4602-9611-ade38e21583c" target="e124b220-a148-4c03-8d35-07f13c48e3b8" archimateRelationship="b9f9764d-85f4-4e94-a54e-660d5e77f4c7"/>
-            </child>
-          </child>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="f3c3ee39-ad35-4d76-8472-7bd883ff45cd" targetConnections="5b72eb26-e068-4025-bc87-9a3183df0e45" alpha="100" archimateElement="a44b1b6b-a84d-40cc-899e-045c877e4047" type="1">
-          <bounds x="420" y="30" width="211" height="196"/>
-          <sourceConnection xsi:type="archimate:Connection" id="3e0b5484-d630-4c3b-b62a-2384f68e728b" source="f3c3ee39-ad35-4d76-8472-7bd883ff45cd" target="e124b220-a148-4c03-8d35-07f13c48e3b8" archimateRelationship="13d99ae9-68b0-4699-8ff3-35c1b8557bfc"/>
-          <sourceConnection xsi:type="archimate:Connection" id="df28e905-85b2-46b5-a4a8-89e71c9cb675" source="f3c3ee39-ad35-4d76-8472-7bd883ff45cd" target="3b7f1c4a-6523-42b4-912f-056028859461" archimateRelationship="65d46e74-58bb-4f81-9935-065503a9accd"/>
-          <child xsi:type="archimate:DiagramObject" id="e124b220-a148-4c03-8d35-07f13c48e3b8" targetConnections="3e0b5484-d630-4c3b-b62a-2384f68e728b b863c238-ae61-4190-8dad-b6f546426c98" archimateElement="99b1b583-86b2-49a2-8546-82d4b0b3e34e">
-            <bounds x="45" y="120" width="120" height="45"/>
-          </child>
-          <child xsi:type="archimate:DiagramObject" id="3b7f1c4a-6523-42b4-912f-056028859461" targetConnections="df28e905-85b2-46b5-a4a8-89e71c9cb675" archimateElement="6a3d105f-1fd2-4b14-b8fe-f122a495ccc2">
-            <bounds x="45" y="45" width="120" height="45"/>
-          </child>
-        </child>
-        <child xsi:type="archimate:Note" id="0b4205ef-d1cc-4984-9366-40adb69b7e5e" textAlignment="1" alpha="0">
-          <bounds x="240" y="150" width="185" height="45"/>
-          <content>Referencovaný údaj&#xD;
-je odkazom na referenčný údaj</content>
-        </child>
-        <child xsi:type="archimate:Note" id="9e5c809e-1323-4942-a388-690a5d0bc387" textAlignment="1" fillColor="#ffffff">
-          <bounds x="45" y="240" width="181" height="76"/>
-          <sourceConnection id="f199fa71-a3db-4345-844b-4c277b622409" source="9e5c809e-1323-4942-a388-690a5d0bc387" target="9b3a97e3-bc1f-4d68-a5ab-fa3b496eedb2"/>
-          <content>Referenčný register spravuje referenčné údaje a poskytuje ich okoliu</content>
-        </child>
-        <child xsi:type="archimate:Note" id="a975800a-e6bf-40e7-9643-c7b2484f1543" textAlignment="1" fillColor="#ffffff">
-          <bounds x="435" y="240" width="181" height="76"/>
-          <sourceConnection id="5b72eb26-e068-4025-bc87-9a3183df0e45" source="a975800a-e6bf-40e7-9643-c7b2484f1543" target="f3c3ee39-ad35-4d76-8472-7bd883ff45cd"/>
-          <content>Konzument referencuje referenčné údaje referenčného registra</content>
-        </child>
-      </element>
-      <element xsi:type="archimate:ArchimateDiagramModel" name="CSRU" id="861d2569-4dfb-4393-b3cd-3146af79c977">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Referencne_udaje" id="861d2569-4dfb-4393-b3cd-3146af79c977">
         <child xsi:type="archimate:DiagramObject" id="195c2773-d6d3-4f5f-849c-155a6bf7f8e7" textPosition="1" archimateElement="7cf29b80-dcc6-4b83-8f8a-54ca3fca5244" type="1">
           <bounds x="107" y="435" width="601" height="61"/>
           <sourceConnection xsi:type="archimate:Connection" id="ab7e530a-6b65-47a0-b336-5266d565170f" textPosition="0" source="195c2773-d6d3-4f5f-849c-155a6bf7f8e7" target="47153dab-9e2e-4024-9590-0a0d597c1b89" archimateRelationship="a33a006b-d232-43be-bd77-a440083f6b58"/>
